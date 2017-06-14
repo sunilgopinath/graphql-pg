@@ -1,0 +1,6 @@
+package: .
+import:
+- package: github.com/neelance/graphql-go
+  subpackages:
+  - example/starwars
+  - relay

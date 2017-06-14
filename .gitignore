@@ -1,0 +1,24 @@
+#ignore ide files
+.idea/
+*.iml
+*.tgz
+
+#ignore the main binary
+/api-front
+/ci/binary/api-front
+
+# Ignore generated files that are not useful to diff
+/generated/*
+!/generated/README.md
+!/generated/grpc/
+/generated/grpc/**/*
+!/generated/grpc/**/
+!/generated/grpc/**/*.manual_extractfields.pb.go
+
+#dont want the dependencies either - use glide to get them
+vendor
+.env
+.DS_Store
+/test
+.vscode
+coverage.out
